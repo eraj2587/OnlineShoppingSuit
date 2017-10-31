@@ -1,0 +1,13 @@
+﻿@model ECommerce.WebAdmin.Models.ProductModel
+
+<td>
+    @Html.EditorFor(modelItem => modelItem.ProductCode)
+</td>
+<td>
+    @Html.EditorFor(modelItem => modelItem.ProductName)
+</td>
+
+<td>
+    @*@Html.EditorFor(modelItem => modelItem.Price)*@
+    @Html.TextBoxNumericFor(modelItem=>modelItem.Price)
+</td>

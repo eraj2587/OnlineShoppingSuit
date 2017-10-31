@@ -1,0 +1,2 @@
+2016-04-04 23:00:47,466 INFO ECommerce.Web.Controllers.EmployeeController - Action Index has been fired.
+INFO  2016-04-04 23:06:28,611    71ms EmployeeController     Index              - Action Index has been fired.

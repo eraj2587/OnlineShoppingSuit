@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Domain", "ECommerce.Domain\ECommerce.Domain.csproj", "{B93C61DD-3010-4487-9FF4-B11CCBC6DDEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Storage", "ECommerce.Storage\ECommerce.Storage.csproj", "{8241E806-92B9-43E5-A3FE-72920F64DE0A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B93C61DD-3010-4487-9FF4-B11CCBC6DDEA} = {B93C61DD-3010-4487-9FF4-B11CCBC6DDEA}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{F2644830-33D4-440D-B817-C89EACEEDED1}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Common", "ECommerce.Common\ECommerce.Common.csproj", "{0A8A8974-ABDE-4478-8382-C0E066B2B662}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.NserviceBusHost", "ECommerce.NserviceBusHost\ECommerce.NserviceBusHost.csproj", "{055193EA-E9EF-47AB-966E-039EC39C34FD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8241E806-92B9-43E5-A3FE-72920F64DE0A} = {8241E806-92B9-43E5-A3FE-72920F64DE0A}
+		{215DEF41-E1C3-4D2D-84E2-B5C2B3B679B3} = {215DEF41-E1C3-4D2D-84E2-B5C2B3B679B3}
+		{1AC8D351-4A3D-4E53-8C6F-077F7C6B321D} = {1AC8D351-4A3D-4E53-8C6F-077F7C6B321D}
+		{B93C61DD-3010-4487-9FF4-B11CCBC6DDEA} = {B93C61DD-3010-4487-9FF4-B11CCBC6DDEA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.NserviceBusHandler", "ECommerce.NserviceBusHandler\ECommerce.NserviceBusHandler.csproj", "{215DEF41-E1C3-4D2D-84E2-B5C2B3B679B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.NServiceBus.Messages", "ECommerce.NServiceBus.Messages\ECommerce.NServiceBus.Messages.csproj", "{1AC8D351-4A3D-4E53-8C6F-077F7C6B321D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.WebAdmin", "ECommerce.WebAdmin\ECommerce.WebAdmin.csproj", "{8380B489-5E65-45CF-8C47-98DDE98C9D1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.Website", "ECommerce.Website\ECommerce.Website.csproj", "{35F7E8BF-7CE1-4E5D-A43D-EDFF1FDAA1E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerce.WebAPI", "ECommerce.WebAPI\ECommerce.WebAPI.csproj", "{C3036743-B4F7-47CF-98EB-71D7B15B671F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{663FCB5F-1935-45AB-B155-376DC120D713}"
+	ProjectSection(SolutionItems) = preProject
+		References.txt = References.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B93C61DD-3010-4487-9FF4-B11CCBC6DDEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B93C61DD-3010-4487-9FF4-B11CCBC6DDEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B93C61DD-3010-4487-9FF4-B11CCBC6DDEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B93C61DD-3010-4487-9FF4-B11CCBC6DDEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8241E806-92B9-43E5-A3FE-72920F64DE0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8241E806-92B9-43E5-A3FE-72920F64DE0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8241E806-92B9-43E5-A3FE-72920F64DE0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8241E806-92B9-43E5-A3FE-72920F64DE0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A8A8974-ABDE-4478-8382-C0E066B2B662}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A8A8974-ABDE-4478-8382-C0E066B2B662}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A8A8974-ABDE-4478-8382-C0E066B2B662}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A8A8974-ABDE-4478-8382-C0E066B2B662}.Release|Any CPU.Build.0 = Release|Any CPU
+		{055193EA-E9EF-47AB-966E-039EC39C34FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{055193EA-E9EF-47AB-966E-039EC39C34FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{055193EA-E9EF-47AB-966E-039EC39C34FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{055193EA-E9EF-47AB-966E-039EC39C34FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{215DEF41-E1C3-4D2D-84E2-B5C2B3B679B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{215DEF41-E1C3-4D2D-84E2-B5C2B3B679B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{215DEF41-E1C3-4D2D-84E2-B5C2B3B679B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{215DEF41-E1C3-4D2D-84E2-B5C2B3B679B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AC8D351-4A3D-4E53-8C6F-077F7C6B321D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AC8D351-4A3D-4E53-8C6F-077F7C6B321D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AC8D351-4A3D-4E53-8C6F-077F7C6B321D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AC8D351-4A3D-4E53-8C6F-077F7C6B321D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8380B489-5E65-45CF-8C47-98DDE98C9D1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8380B489-5E65-45CF-8C47-98DDE98C9D1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8380B489-5E65-45CF-8C47-98DDE98C9D1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8380B489-5E65-45CF-8C47-98DDE98C9D1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35F7E8BF-7CE1-4E5D-A43D-EDFF1FDAA1E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35F7E8BF-7CE1-4E5D-A43D-EDFF1FDAA1E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35F7E8BF-7CE1-4E5D-A43D-EDFF1FDAA1E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35F7E8BF-7CE1-4E5D-A43D-EDFF1FDAA1E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3036743-B4F7-47CF-98EB-71D7B15B671F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3036743-B4F7-47CF-98EB-71D7B15B671F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3036743-B4F7-47CF-98EB-71D7B15B671F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3036743-B4F7-47CF-98EB-71D7B15B671F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

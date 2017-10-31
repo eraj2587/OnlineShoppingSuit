@@ -1,0 +1,5544 @@
+﻿2016-05-18 20:39:43.678 INFO  DefaultFactory Logging to 'C:\Rajaram\Project\Demo\GIT\EF-Code-First\EFCodeFirst\EFCodeFirst\App_Data\' with level Info
+2016-05-18 20:39:43.885 WARN  NServiceBus.Features.Encryptor You have configured a encryption service via either ConfigurationBuilder.RijndaelEncryptionService or ConfigurationBuilder.RegisterEncryptionService however no properties were found on type that require encryption. 
+Perhaps you forgot to define your encryption message conventions or to define message properties using as WireEncryptedString.
+2016-05-18 20:39:43.923 INFO  NServiceBus.Licensing.LicenseManager Expires on 10/30/2016 12:00:00 AM
+2016-05-18 20:39:43.945 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2016-05-18 20:39:44.018 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't be used to forward received messages to the error queue as the endpoint requires receive capabilities
+
+Name: InMemoryFaultManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Scheduler cannot be used from a sendonly endpoint
+
+Name: CustomSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [MessageDrivenSubscriptions]
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't use the timeoutmanager since it requires receive capabilities
+
+Name: Sagas
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [ForwarderFaultManager]
+
+Name: DataBusFileBased
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Distributor
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: WorkerNode
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateGatewayDeduplication
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: NHibernateDBConnectionProvider
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateOutboxStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: NHibernateSagaStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: NHibernateStorageSession
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [NHibernateDBConnectionProvider]
+
+Name: NHibernateSubscriptionStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [StorageDrivenPublishing]
+
+Name: NHibernateTimeoutStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager],[NHibernateDBConnectionProvider]
+
+
+2016-05-18 20:39:44.080 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'MASTERCARD\e058857' to group 'Performance Monitor Users' because the user is already in group.
+2016-05-18 20:55:48.686 INFO  DefaultFactory Logging to 'C:\Rajaram\Project\Demo\GIT\EF-Code-First\EFCodeFirst\EFCodeFirst\App_Data\' with level Info
+2016-05-18 20:55:48.893 WARN  NServiceBus.Features.Encryptor You have configured a encryption service via either ConfigurationBuilder.RijndaelEncryptionService or ConfigurationBuilder.RegisterEncryptionService however no properties were found on type that require encryption. 
+Perhaps you forgot to define your encryption message conventions or to define message properties using as WireEncryptedString.
+2016-05-18 20:55:48.931 INFO  NServiceBus.Licensing.LicenseManager Expires on 10/30/2016 12:00:00 AM
+2016-05-18 20:55:48.948 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2016-05-18 20:55:49.001 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't be used to forward received messages to the error queue as the endpoint requires receive capabilities
+
+Name: InMemoryFaultManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Scheduler cannot be used from a sendonly endpoint
+
+Name: CustomSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [MessageDrivenSubscriptions]
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't use the timeoutmanager since it requires receive capabilities
+
+Name: Sagas
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [ForwarderFaultManager]
+
+Name: DataBusFileBased
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Distributor
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: WorkerNode
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateGatewayDeduplication
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: NHibernateDBConnectionProvider
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateOutboxStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: NHibernateSagaStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: NHibernateStorageSession
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [NHibernateDBConnectionProvider]
+
+Name: NHibernateSubscriptionStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [StorageDrivenPublishing]
+
+Name: NHibernateTimeoutStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager],[NHibernateDBConnectionProvider]
+
+
+2016-05-18 20:55:49.066 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'MASTERCARD\e058857' to group 'Performance Monitor Users' because the user is already in group.
+2016-05-18 20:56:04.322 INFO  DefaultFactory Logging to 'C:\Rajaram\Project\Demo\GIT\EF-Code-First\EFCodeFirst\EFCodeFirst\App_Data\' with level Info
+2016-05-18 20:56:04.510 WARN  NServiceBus.Features.Encryptor You have configured a encryption service via either ConfigurationBuilder.RijndaelEncryptionService or ConfigurationBuilder.RegisterEncryptionService however no properties were found on type that require encryption. 
+Perhaps you forgot to define your encryption message conventions or to define message properties using as WireEncryptedString.
+2016-05-18 20:56:04.542 INFO  NServiceBus.Licensing.LicenseManager Expires on 10/30/2016 12:00:00 AM
+2016-05-18 20:56:04.560 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2016-05-18 20:56:04.612 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't be used to forward received messages to the error queue as the endpoint requires receive capabilities
+
+Name: InMemoryFaultManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Scheduler cannot be used from a sendonly endpoint
+
+Name: CustomSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [MessageDrivenSubscriptions]
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't use the timeoutmanager since it requires receive capabilities
+
+Name: Sagas
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [ForwarderFaultManager]
+
+Name: DataBusFileBased
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Distributor
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: WorkerNode
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateGatewayDeduplication
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: NHibernateDBConnectionProvider
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateOutboxStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: NHibernateSagaStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: NHibernateStorageSession
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [NHibernateDBConnectionProvider]
+
+Name: NHibernateSubscriptionStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [StorageDrivenPublishing]
+
+Name: NHibernateTimeoutStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager],[NHibernateDBConnectionProvider]
+
+
+2016-05-18 20:56:04.675 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'MASTERCARD\e058857' to group 'Performance Monitor Users' because the user is already in group.
+2016-05-18 20:56:11.502 INFO  DefaultFactory Logging to 'C:\Rajaram\Project\Demo\GIT\EF-Code-First\EFCodeFirst\EFCodeFirst\App_Data\' with level Info
+2016-05-18 20:56:11.710 WARN  NServiceBus.Features.Encryptor You have configured a encryption service via either ConfigurationBuilder.RijndaelEncryptionService or ConfigurationBuilder.RegisterEncryptionService however no properties were found on type that require encryption. 
+Perhaps you forgot to define your encryption message conventions or to define message properties using as WireEncryptedString.
+2016-05-18 20:56:11.737 INFO  NServiceBus.Licensing.LicenseManager Expires on 10/30/2016 12:00:00 AM
+2016-05-18 20:56:11.752 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2016-05-18 20:56:11.817 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't be used to forward received messages to the error queue as the endpoint requires receive capabilities
+
+Name: InMemoryFaultManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Scheduler cannot be used from a sendonly endpoint
+
+Name: CustomSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [MessageDrivenSubscriptions]
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't use the timeoutmanager since it requires receive capabilities
+
+Name: Sagas
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [ForwarderFaultManager]
+
+Name: DataBusFileBased
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Distributor
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: WorkerNode
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateGatewayDeduplication
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: NHibernateDBConnectionProvider
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateOutboxStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: NHibernateSagaStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: NHibernateStorageSession
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [NHibernateDBConnectionProvider]
+
+Name: NHibernateSubscriptionStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [StorageDrivenPublishing]
+
+Name: NHibernateTimeoutStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager],[NHibernateDBConnectionProvider]
+
+
+2016-05-18 20:56:11.877 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'MASTERCARD\e058857' to group 'Performance Monitor Users' because the user is already in group.
+2016-05-18 21:09:34.150 INFO  DefaultFactory Logging to 'C:\Rajaram\Project\Demo\GIT\EF-Code-First\EFCodeFirst\EFCodeFirst\App_Data\' with level Info
+2016-05-18 21:09:34.355 WARN  NServiceBus.Features.Encryptor You have configured a encryption service via either ConfigurationBuilder.RijndaelEncryptionService or ConfigurationBuilder.RegisterEncryptionService however no properties were found on type that require encryption. 
+Perhaps you forgot to define your encryption message conventions or to define message properties using as WireEncryptedString.
+2016-05-18 21:09:34.390 INFO  NServiceBus.Licensing.LicenseManager Expires on 10/30/2016 12:00:00 AM
+2016-05-18 21:09:34.407 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2016-05-18 21:09:34.467 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't be used to forward received messages to the error queue as the endpoint requires receive capabilities
+
+Name: InMemoryFaultManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Scheduler cannot be used from a sendonly endpoint
+
+Name: CustomSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [MessageDrivenSubscriptions]
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't use the timeoutmanager since it requires receive capabilities
+
+Name: Sagas
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [ForwarderFaultManager]
+
+Name: DataBusFileBased
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Distributor
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: WorkerNode
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateGatewayDeduplication
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: NHibernateDBConnectionProvider
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateOutboxStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: NHibernateSagaStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: NHibernateStorageSession
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [NHibernateDBConnectionProvider]
+
+Name: NHibernateSubscriptionStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [StorageDrivenPublishing]
+
+Name: NHibernateTimeoutStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager],[NHibernateDBConnectionProvider]
+
+
+2016-05-18 21:09:34.527 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'MASTERCARD\e058857' to group 'Performance Monitor Users' because the user is already in group.
+2016-05-18 21:09:41.266 INFO  DefaultFactory Logging to 'C:\Rajaram\Project\Demo\GIT\EF-Code-First\EFCodeFirst\EFCodeFirst\App_Data\' with level Info
+2016-05-18 21:09:41.486 WARN  NServiceBus.Features.Encryptor You have configured a encryption service via either ConfigurationBuilder.RijndaelEncryptionService or ConfigurationBuilder.RegisterEncryptionService however no properties were found on type that require encryption. 
+Perhaps you forgot to define your encryption message conventions or to define message properties using as WireEncryptedString.
+2016-05-18 21:09:41.517 INFO  NServiceBus.Licensing.LicenseManager Expires on 10/30/2016 12:00:00 AM
+2016-05-18 21:09:41.533 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2016-05-18 21:09:41.595 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't be used to forward received messages to the error queue as the endpoint requires receive capabilities
+
+Name: InMemoryFaultManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Scheduler cannot be used from a sendonly endpoint
+
+Name: CustomSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [MessageDrivenSubscriptions]
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't use the timeoutmanager since it requires receive capabilities
+
+Name: Sagas
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [ForwarderFaultManager]
+
+Name: DataBusFileBased
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Distributor
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: WorkerNode
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateGatewayDeduplication
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: NHibernateDBConnectionProvider
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateOutboxStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: NHibernateSagaStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: NHibernateStorageSession
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [NHibernateDBConnectionProvider]
+
+Name: NHibernateSubscriptionStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [StorageDrivenPublishing]
+
+Name: NHibernateTimeoutStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager],[NHibernateDBConnectionProvider]
+
+
+2016-05-18 21:09:41.660 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'MASTERCARD\e058857' to group 'Performance Monitor Users' because the user is already in group.
+2016-05-18 21:46:22.952 INFO  DefaultFactory Logging to 'C:\Rajaram\Project\Demo\GIT\EF-Code-First\EFCodeFirst\EFCodeFirst\App_Data\' with level Info
+2016-05-18 21:46:23.160 WARN  NServiceBus.Features.Encryptor You have configured a encryption service via either ConfigurationBuilder.RijndaelEncryptionService or ConfigurationBuilder.RegisterEncryptionService however no properties were found on type that require encryption. 
+Perhaps you forgot to define your encryption message conventions or to define message properties using as WireEncryptedString.
+2016-05-18 21:46:23.195 INFO  NServiceBus.Licensing.LicenseManager Expires on 10/30/2016 12:00:00 AM
+2016-05-18 21:46:23.212 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2016-05-18 21:46:23.270 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't be used to forward received messages to the error queue as the endpoint requires receive capabilities
+
+Name: InMemoryFaultManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Scheduler cannot be used from a sendonly endpoint
+
+Name: CustomSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [MessageDrivenSubscriptions]
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't use the timeoutmanager since it requires receive capabilities
+
+Name: Sagas
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [ForwarderFaultManager]
+
+Name: DataBusFileBased
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Distributor
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: WorkerNode
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateGatewayDeduplication
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: NHibernateDBConnectionProvider
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateOutboxStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: NHibernateSagaStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: NHibernateStorageSession
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [NHibernateDBConnectionProvider]
+
+Name: NHibernateSubscriptionStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [StorageDrivenPublishing]
+
+Name: NHibernateTimeoutStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager],[NHibernateDBConnectionProvider]
+
+
+2016-05-18 21:46:23.325 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'MASTERCARD\e058857' to group 'Performance Monitor Users' because the user is already in group.
+2016-05-18 21:46:29.637 INFO  DefaultFactory Logging to 'C:\Rajaram\Project\Demo\GIT\EF-Code-First\EFCodeFirst\EFCodeFirst\App_Data\' with level Info
+2016-05-18 21:46:29.858 WARN  NServiceBus.Features.Encryptor You have configured a encryption service via either ConfigurationBuilder.RijndaelEncryptionService or ConfigurationBuilder.RegisterEncryptionService however no properties were found on type that require encryption. 
+Perhaps you forgot to define your encryption message conventions or to define message properties using as WireEncryptedString.
+2016-05-18 21:46:29.892 INFO  NServiceBus.Licensing.LicenseManager Expires on 10/30/2016 12:00:00 AM
+2016-05-18 21:46:29.910 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2016-05-18 21:46:29.962 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't be used to forward received messages to the error queue as the endpoint requires receive capabilities
+
+Name: InMemoryFaultManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Scheduler cannot be used from a sendonly endpoint
+
+Name: CustomSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [MessageDrivenSubscriptions]
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't use the timeoutmanager since it requires receive capabilities
+
+Name: Sagas
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [ForwarderFaultManager]
+
+Name: DataBusFileBased
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Distributor
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: WorkerNode
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateGatewayDeduplication
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: NHibernateDBConnectionProvider
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateOutboxStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: NHibernateSagaStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: NHibernateStorageSession
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [NHibernateDBConnectionProvider]
+
+Name: NHibernateSubscriptionStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [StorageDrivenPublishing]
+
+Name: NHibernateTimeoutStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager],[NHibernateDBConnectionProvider]
+
+
+2016-05-18 21:46:30.013 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'MASTERCARD\e058857' to group 'Performance Monitor Users' because the user is already in group.
+2016-05-18 21:47:37.463 INFO  DefaultFactory Logging to 'C:\Rajaram\Project\Demo\GIT\EF-Code-First\EFCodeFirst\EFCodeFirst\App_Data\' with level Info
+2016-05-18 21:47:37.676 WARN  NServiceBus.Features.Encryptor You have configured a encryption service via either ConfigurationBuilder.RijndaelEncryptionService or ConfigurationBuilder.RegisterEncryptionService however no properties were found on type that require encryption. 
+Perhaps you forgot to define your encryption message conventions or to define message properties using as WireEncryptedString.
+2016-05-18 21:47:37.711 INFO  NServiceBus.Licensing.LicenseManager Expires on 10/30/2016 12:00:00 AM
+2016-05-18 21:47:37.726 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2016-05-18 21:47:37.781 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't be used to forward received messages to the error queue as the endpoint requires receive capabilities
+
+Name: InMemoryFaultManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Scheduler cannot be used from a sendonly endpoint
+
+Name: CustomSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [MessageDrivenSubscriptions]
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't use the timeoutmanager since it requires receive capabilities
+
+Name: Sagas
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [ForwarderFaultManager]
+
+Name: DataBusFileBased
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Distributor
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: WorkerNode
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateGatewayDeduplication
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: NHibernateDBConnectionProvider
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateOutboxStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: NHibernateSagaStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: NHibernateStorageSession
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [NHibernateDBConnectionProvider]
+
+Name: NHibernateSubscriptionStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [StorageDrivenPublishing]
+
+Name: NHibernateTimeoutStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager],[NHibernateDBConnectionProvider]
+
+
+2016-05-18 21:47:37.838 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'MASTERCARD\e058857' to group 'Performance Monitor Users' because the user is already in group.
+2016-05-18 21:47:44.474 INFO  DefaultFactory Logging to 'C:\Rajaram\Project\Demo\GIT\EF-Code-First\EFCodeFirst\EFCodeFirst\App_Data\' with level Info
+2016-05-18 21:47:44.673 WARN  NServiceBus.Features.Encryptor You have configured a encryption service via either ConfigurationBuilder.RijndaelEncryptionService or ConfigurationBuilder.RegisterEncryptionService however no properties were found on type that require encryption. 
+Perhaps you forgot to define your encryption message conventions or to define message properties using as WireEncryptedString.
+2016-05-18 21:47:44.705 INFO  NServiceBus.Licensing.LicenseManager Expires on 10/30/2016 12:00:00 AM
+2016-05-18 21:47:44.735 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2016-05-18 21:47:44.803 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't be used to forward received messages to the error queue as the endpoint requires receive capabilities
+
+Name: InMemoryFaultManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Scheduler cannot be used from a sendonly endpoint
+
+Name: CustomSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [MessageDrivenSubscriptions]
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't use the timeoutmanager since it requires receive capabilities
+
+Name: Sagas
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [ForwarderFaultManager]
+
+Name: DataBusFileBased
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Distributor
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: WorkerNode
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateGatewayDeduplication
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: NHibernateDBConnectionProvider
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateOutboxStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: NHibernateSagaStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: NHibernateStorageSession
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [NHibernateDBConnectionProvider]
+
+Name: NHibernateSubscriptionStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [StorageDrivenPublishing]
+
+Name: NHibernateTimeoutStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager],[NHibernateDBConnectionProvider]
+
+
+2016-05-18 21:47:44.872 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'MASTERCARD\e058857' to group 'Performance Monitor Users' because the user is already in group.
+2016-05-18 21:51:11.136 INFO  DefaultFactory Logging to 'C:\Rajaram\Project\Demo\GIT\EF-Code-First\EFCodeFirst\EFCodeFirst\App_Data\' with level Info
+2016-05-18 21:51:11.341 WARN  NServiceBus.Features.Encryptor You have configured a encryption service via either ConfigurationBuilder.RijndaelEncryptionService or ConfigurationBuilder.RegisterEncryptionService however no properties were found on type that require encryption. 
+Perhaps you forgot to define your encryption message conventions or to define message properties using as WireEncryptedString.
+2016-05-18 21:51:11.388 INFO  NServiceBus.Licensing.LicenseManager Expires on 10/30/2016 12:00:00 AM
+2016-05-18 21:51:11.403 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2016-05-18 21:51:11.456 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't be used to forward received messages to the error queue as the endpoint requires receive capabilities
+
+Name: InMemoryFaultManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Scheduler cannot be used from a sendonly endpoint
+
+Name: CustomSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [MessageDrivenSubscriptions]
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't use the timeoutmanager since it requires receive capabilities
+
+Name: Sagas
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [ForwarderFaultManager]
+
+Name: DataBusFileBased
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Distributor
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: WorkerNode
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateGatewayDeduplication
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: NHibernateDBConnectionProvider
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateOutboxStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: NHibernateSagaStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: NHibernateStorageSession
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [NHibernateDBConnectionProvider]
+
+Name: NHibernateSubscriptionStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [StorageDrivenPublishing]
+
+Name: NHibernateTimeoutStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager],[NHibernateDBConnectionProvider]
+
+
+2016-05-18 21:51:11.518 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'MASTERCARD\e058857' to group 'Performance Monitor Users' because the user is already in group.
+2016-05-18 21:51:21.471 INFO  DefaultFactory Logging to 'C:\Rajaram\Project\Demo\GIT\EF-Code-First\EFCodeFirst\EFCodeFirst\App_Data\' with level Info
+2016-05-18 21:51:21.679 WARN  NServiceBus.Features.Encryptor You have configured a encryption service via either ConfigurationBuilder.RijndaelEncryptionService or ConfigurationBuilder.RegisterEncryptionService however no properties were found on type that require encryption. 
+Perhaps you forgot to define your encryption message conventions or to define message properties using as WireEncryptedString.
+2016-05-18 21:51:21.710 INFO  NServiceBus.Licensing.LicenseManager Expires on 10/30/2016 12:00:00 AM
+2016-05-18 21:51:21.715 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2016-05-18 21:51:21.783 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't be used to forward received messages to the error queue as the endpoint requires receive capabilities
+
+Name: InMemoryFaultManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Scheduler cannot be used from a sendonly endpoint
+
+Name: CustomSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [MessageDrivenSubscriptions]
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't use the timeoutmanager since it requires receive capabilities
+
+Name: Sagas
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [ForwarderFaultManager]
+
+Name: DataBusFileBased
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Distributor
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: WorkerNode
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateGatewayDeduplication
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: NHibernateDBConnectionProvider
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateOutboxStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: NHibernateSagaStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: NHibernateStorageSession
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [NHibernateDBConnectionProvider]
+
+Name: NHibernateSubscriptionStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [StorageDrivenPublishing]
+
+Name: NHibernateTimeoutStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager],[NHibernateDBConnectionProvider]
+
+
+2016-05-18 21:51:21.832 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'MASTERCARD\e058857' to group 'Performance Monitor Users' because the user is already in group.
+2016-05-18 21:54:00.710 INFO  DefaultFactory Logging to 'C:\Rajaram\Project\Demo\GIT\EF-Code-First\EFCodeFirst\EFCodeFirst\App_Data\' with level Info
+2016-05-18 21:54:00.903 WARN  NServiceBus.Features.Encryptor You have configured a encryption service via either ConfigurationBuilder.RijndaelEncryptionService or ConfigurationBuilder.RegisterEncryptionService however no properties were found on type that require encryption. 
+Perhaps you forgot to define your encryption message conventions or to define message properties using as WireEncryptedString.
+2016-05-18 21:54:00.936 INFO  NServiceBus.Licensing.LicenseManager Expires on 10/30/2016 12:00:00 AM
+2016-05-18 21:54:00.952 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2016-05-18 21:54:01.007 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't be used to forward received messages to the error queue as the endpoint requires receive capabilities
+
+Name: InMemoryFaultManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Scheduler cannot be used from a sendonly endpoint
+
+Name: CustomSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [MessageDrivenSubscriptions]
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't use the timeoutmanager since it requires receive capabilities
+
+Name: Sagas
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [ForwarderFaultManager]
+
+Name: DataBusFileBased
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Distributor
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: WorkerNode
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateGatewayDeduplication
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: NHibernateDBConnectionProvider
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateOutboxStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: NHibernateSagaStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: NHibernateStorageSession
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [NHibernateDBConnectionProvider]
+
+Name: NHibernateSubscriptionStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [StorageDrivenPublishing]
+
+Name: NHibernateTimeoutStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager],[NHibernateDBConnectionProvider]
+
+
+2016-05-18 21:54:01.064 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'MASTERCARD\e058857' to group 'Performance Monitor Users' because the user is already in group.
+2016-05-18 21:54:17.841 INFO  DefaultFactory Logging to 'C:\Rajaram\Project\Demo\GIT\EF-Code-First\EFCodeFirst\EFCodeFirst\App_Data\' with level Info
+2016-05-18 21:54:18.051 WARN  NServiceBus.Features.Encryptor You have configured a encryption service via either ConfigurationBuilder.RijndaelEncryptionService or ConfigurationBuilder.RegisterEncryptionService however no properties were found on type that require encryption. 
+Perhaps you forgot to define your encryption message conventions or to define message properties using as WireEncryptedString.
+2016-05-18 21:54:18.079 INFO  NServiceBus.Licensing.LicenseManager Expires on 10/30/2016 12:00:00 AM
+2016-05-18 21:54:18.100 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2016-05-18 21:54:18.161 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't be used to forward received messages to the error queue as the endpoint requires receive capabilities
+
+Name: InMemoryFaultManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Scheduler cannot be used from a sendonly endpoint
+
+Name: CustomSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [MessageDrivenSubscriptions]
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't use the timeoutmanager since it requires receive capabilities
+
+Name: Sagas
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [ForwarderFaultManager]
+
+Name: DataBusFileBased
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Distributor
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: WorkerNode
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateGatewayDeduplication
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: NHibernateDBConnectionProvider
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateOutboxStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: NHibernateSagaStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: NHibernateStorageSession
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [NHibernateDBConnectionProvider]
+
+Name: NHibernateSubscriptionStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [StorageDrivenPublishing]
+
+Name: NHibernateTimeoutStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager],[NHibernateDBConnectionProvider]
+
+
+2016-05-18 21:54:18.222 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'MASTERCARD\e058857' to group 'Performance Monitor Users' because the user is already in group.
+2016-05-18 22:06:18.788 INFO  DefaultFactory Logging to 'C:\Rajaram\Project\Demo\GIT\EF-Code-First\EFCodeFirst\EFCodeFirst\App_Data\' with level Info
+2016-05-18 22:06:18.990 WARN  NServiceBus.Features.Encryptor You have configured a encryption service via either ConfigurationBuilder.RijndaelEncryptionService or ConfigurationBuilder.RegisterEncryptionService however no properties were found on type that require encryption. 
+Perhaps you forgot to define your encryption message conventions or to define message properties using as WireEncryptedString.
+2016-05-18 22:06:19.023 INFO  NServiceBus.Licensing.LicenseManager Expires on 10/30/2016 12:00:00 AM
+2016-05-18 22:06:19.038 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2016-05-18 22:06:19.090 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't be used to forward received messages to the error queue as the endpoint requires receive capabilities
+
+Name: InMemoryFaultManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Scheduler cannot be used from a sendonly endpoint
+
+Name: CustomSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [MessageDrivenSubscriptions]
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't use the timeoutmanager since it requires receive capabilities
+
+Name: Sagas
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [ForwarderFaultManager]
+
+Name: DataBusFileBased
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Distributor
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: WorkerNode
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateGatewayDeduplication
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: NHibernateDBConnectionProvider
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateOutboxStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: NHibernateSagaStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: NHibernateStorageSession
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [NHibernateDBConnectionProvider]
+
+Name: NHibernateSubscriptionStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [StorageDrivenPublishing]
+
+Name: NHibernateTimeoutStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager],[NHibernateDBConnectionProvider]
+
+
+2016-05-18 22:06:19.148 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'MASTERCARD\e058857' to group 'Performance Monitor Users' because the user is already in group.
+2016-05-18 22:06:26.625 INFO  DefaultFactory Logging to 'C:\Rajaram\Project\Demo\GIT\EF-Code-First\EFCodeFirst\EFCodeFirst\App_Data\' with level Info
+2016-05-18 22:06:26.852 WARN  NServiceBus.Features.Encryptor You have configured a encryption service via either ConfigurationBuilder.RijndaelEncryptionService or ConfigurationBuilder.RegisterEncryptionService however no properties were found on type that require encryption. 
+Perhaps you forgot to define your encryption message conventions or to define message properties using as WireEncryptedString.
+2016-05-18 22:06:26.882 INFO  NServiceBus.Licensing.LicenseManager Expires on 10/30/2016 12:00:00 AM
+2016-05-18 22:06:26.899 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2016-05-18 22:06:26.962 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't be used to forward received messages to the error queue as the endpoint requires receive capabilities
+
+Name: InMemoryFaultManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Scheduler cannot be used from a sendonly endpoint
+
+Name: CustomSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [MessageDrivenSubscriptions]
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't use the timeoutmanager since it requires receive capabilities
+
+Name: Sagas
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [ForwarderFaultManager]
+
+Name: DataBusFileBased
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Distributor
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: WorkerNode
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateGatewayDeduplication
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: NHibernateDBConnectionProvider
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateOutboxStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: NHibernateSagaStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: NHibernateStorageSession
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [NHibernateDBConnectionProvider]
+
+Name: NHibernateSubscriptionStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [StorageDrivenPublishing]
+
+Name: NHibernateTimeoutStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager],[NHibernateDBConnectionProvider]
+
+
+2016-05-18 22:06:27.017 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'MASTERCARD\e058857' to group 'Performance Monitor Users' because the user is already in group.
+2016-05-18 22:07:31.955 INFO  DefaultFactory Logging to 'C:\Rajaram\Project\Demo\GIT\EF-Code-First\EFCodeFirst\EFCodeFirst\App_Data\' with level Info
+2016-05-18 22:07:32.152 WARN  NServiceBus.Features.Encryptor You have configured a encryption service via either ConfigurationBuilder.RijndaelEncryptionService or ConfigurationBuilder.RegisterEncryptionService however no properties were found on type that require encryption. 
+Perhaps you forgot to define your encryption message conventions or to define message properties using as WireEncryptedString.
+2016-05-18 22:07:32.185 INFO  NServiceBus.Licensing.LicenseManager Expires on 10/30/2016 12:00:00 AM
+2016-05-18 22:07:32.205 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2016-05-18 22:07:32.255 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't be used to forward received messages to the error queue as the endpoint requires receive capabilities
+
+Name: InMemoryFaultManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Scheduler cannot be used from a sendonly endpoint
+
+Name: CustomSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [MessageDrivenSubscriptions]
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't use the timeoutmanager since it requires receive capabilities
+
+Name: Sagas
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [ForwarderFaultManager]
+
+Name: DataBusFileBased
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Distributor
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: WorkerNode
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateGatewayDeduplication
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: NHibernateDBConnectionProvider
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateOutboxStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: NHibernateSagaStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: NHibernateStorageSession
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [NHibernateDBConnectionProvider]
+
+Name: NHibernateSubscriptionStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [StorageDrivenPublishing]
+
+Name: NHibernateTimeoutStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager],[NHibernateDBConnectionProvider]
+
+
+2016-05-18 22:07:32.315 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'MASTERCARD\e058857' to group 'Performance Monitor Users' because the user is already in group.
+2016-05-18 22:07:38.903 INFO  DefaultFactory Logging to 'C:\Rajaram\Project\Demo\GIT\EF-Code-First\EFCodeFirst\EFCodeFirst\App_Data\' with level Info
+2016-05-18 22:07:39.110 WARN  NServiceBus.Features.Encryptor You have configured a encryption service via either ConfigurationBuilder.RijndaelEncryptionService or ConfigurationBuilder.RegisterEncryptionService however no properties were found on type that require encryption. 
+Perhaps you forgot to define your encryption message conventions or to define message properties using as WireEncryptedString.
+2016-05-18 22:07:39.141 INFO  NServiceBus.Licensing.LicenseManager Expires on 10/30/2016 12:00:00 AM
+2016-05-18 22:07:39.159 INFO  NServiceBus.Features.UnicastBus Number of messages found: 2
+2016-05-18 22:07:39.229 INFO  NServiceBus.Features.DisplayDiagnosticsForFeatures ------------- FEATURES ----------------
+Name: CriticalErrorHandling
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CustomIDataBus
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: DataBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No databus properties was found in available messages
+
+Name: Encryptor
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No encryption properties was found in available messages
+
+Name: ErrorSubscribers
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: ForwarderFaultManager
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't be used to forward received messages to the error queue as the endpoint requires receive capabilities
+
+Name: InMemoryFaultManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InstallationSupport
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: CriticalTimeMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Audit
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No configured audit queue was found
+
+Name: AutoSubscribe
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: ApplySubscriptions
+
+Name: MsmqSubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: Scheduler
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Scheduler cannot be used from a sendonly endpoint
+
+Name: CustomSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -CustomSerialization not enable since serialization definition not detected.
+
+Name: ForwardReceivedMessages
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No forwarding address was defined in the unicastbus config
+
+Name: RegisterHandlersInOrder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: SLAMonitoring
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: LicenseReminder
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Outbox
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: InMemoryGatewayPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: InMemoryOutboxPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: InMemorySagaPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: InMemorySubscriptionPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [MessageDrivenSubscriptions]
+
+Name: InMemoryTimeoutPersistence
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager]
+
+Name: TimeoutManagerBasedDeferral
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: UnicastBus
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: BinarySerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BinarySerialization not enable since serialization definition not detected.
+
+Name: BsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -BsonSerialization not enable since serialization definition not detected.
+
+Name: JsonSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -JsonSerialization not enable since serialization definition not detected.
+
+Name: XmlSerialization
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MsmqTransportConfigurator
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: TimeoutManager
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -Send only endpoints can't use the timeoutmanager since it requires receive capabilities
+
+Name: Sagas
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not fulfill its Prerequisites:
+   -No sagas was found in scanned types
+
+Name: SecondLevelRetries
+Version: 5.2.14
+Enabled by Default: Yes
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [ForwarderFaultManager]
+
+Name: DataBusFileBased
+Version: 5.2.14
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [DataBus]
+
+Name: StorageDrivenPublishing
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: MessageDrivenSubscriptions
+Version: 5.2.14
+Enabled by Default: No
+Status: Enabled
+Dependencies: None
+Startup Tasks: None
+
+Name: Distributor
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: WorkerNode
+Version: 5.0.4
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateGatewayDeduplication
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Gateway]
+
+Name: NHibernateDBConnectionProvider
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: 
+
+Name: NHibernateOutboxStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Outbox]
+
+Name: NHibernateSagaStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [Sagas]
+
+Name: NHibernateStorageSession
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [NHibernateDBConnectionProvider]
+
+Name: NHibernateSubscriptionStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [StorageDrivenPublishing]
+
+Name: NHibernateTimeoutStorage
+Version: 6.2.7
+Enabled by Default: No
+Status: Disabled
+Deactivation reason: Did not meet one of the dependencies: [TimeoutManager],[NHibernateDBConnectionProvider]
+
+
+2016-05-18 22:07:39.294 INFO  NServiceBus.PerformanceMonitorUsersInstaller Skipped adding user 'MASTERCARD\e058857' to group 'Performance Monitor Users' because the user is already in group.

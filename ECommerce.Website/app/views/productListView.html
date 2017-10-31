@@ -1,0 +1,22 @@
+<div class="panel panel-primary">
+    <div class="panel-heading"
+         style="font-size:large">
+        Product List
+    </div>
+    <div class="panel-body">
+        <table class="table" ng-table="vm.tableParams" class="table" show-filter="true">
+            <tbody>
+                <tr ng-repeat="product in $data">
+                    <td title="'Name'" filter="{ name: 'text'}" sortable="'productName'">
+                        <a ui-sref="productDetail({productId: product.productId})">
+                            {{ product.productName}}
+                        </a>
+                    </td>
+                    <td title="'Code'" filter="{ name: 'text'}" sortable="'productCode'">{{ product.productCode }}</td>
+                    <td title="'Release Date'" filter="{ name: 'text'}" sortable="'releaseDate'">{{ product.releaseDate | date }}</td>
+                    <td title="'Price'" filter="{ name: 'text'}" sortable="'price'">{{ product.price | currency }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
